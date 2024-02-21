@@ -3,13 +3,13 @@ from django.shortcuts import render
 
 # Create your views here.
 def login(request):
-    return HttpResponse('LOGIN')
+    return render(request, 'guardian/login/login.html')
 
 def home(request):
-    return HttpResponse('HOME')
+    return render(request, 'guardian/home.html')
 
 def glioma_analysis(request):
-    return HttpResponse('GLIOMA ANALYSIS')
+    return render(request, 'guardian/glioma/glioma_analysis.html')
 
 def blood_cell_analysis(request):
-    return HttpResponse('BLOOD CELL ANALYSIS')
+    return render(request, 'guardian/home.html')
