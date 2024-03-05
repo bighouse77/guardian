@@ -1,0 +1,12 @@
+{% include "guardian/partials/static_load.html" %}
+
+<div class="sidebar col-sm-1">
+    <ul class="nav flex-column">
+        <li class="nav-item {% if selected_page == 'home' %}active{% endif %}"><a class="nav-link" href="#">Página Inicial</a></li>
+        <li class="nav-item {% if selected_page == 'about' %}active{% endif %}"><a class="nav-link" href="#">Análises</a></li>
+        <li class="nav-item {% if selected_page == 'services' %}active{% endif %}"><a class="nav-link" href="#">Serviços</a></li>
+        <li class="nav-item {% if selected_page == 'services' %}active{% endif %}"><a class="nav-link" href="#">Sobre</a></li>
+        <li class="nav-item {% if selected_page == 'contact' %}active{% endif %}"><a class="nav-link" href="#">Contato</a></li>
+    </ul>
+</div>
+
