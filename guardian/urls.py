@@ -1,9 +1,9 @@
 from django.urls import path
-from guardian.views import home, login, glioma_analysis, blood_cell_analysis
+from . import views
 
 urlpatterns = [
-    path('', home),
-    path('login/', login),
-    path('glioma_analysis/', glioma_analysis),
-    path('blood_cell_analysis', blood_cell_analysis)
+    path('', views.home),
+    path('login/', views.login),
+    path('glioma_analysis/', views.glioma_analysis),
+    path('blood_cell_analysis', views.blood_cell_analysis)
 ]
