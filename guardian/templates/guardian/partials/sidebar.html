@@ -2,12 +2,23 @@
 
 <div class="sidebar col-sm-1">
     <ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Análises</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Pacientes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Cadastro de Pacientes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Página Inicial</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'glioma_analysis' %}">Análises</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'patients' %}">Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'register_patients' %}">Cadastro de Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+        </li>
     </ul>
 </div>
-
