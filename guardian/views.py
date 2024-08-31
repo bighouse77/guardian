@@ -20,5 +20,8 @@ def register_patients(request):
 def about(request):
     return render(request, 'guardian/pages/about/about.html')
 
+def contact(request):
+    return render(request, 'guardian/pages/contact/contact.html')
+
 def blood_cell_analysis(request):
     return render(request, 'guardian/home.html')

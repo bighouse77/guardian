@@ -1,0 +1,40 @@
+{% extends 'global/base.html' %}
+
+{% block content %}
+<div class="contact container mt-5">
+    <h1>Contato</h1>
+    <p class="lead">Estamos aqui para ajudar. Entre em contato conosco usando as informações abaixo.</p>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Endereço</h5>
+            <address>
+                1234 Street Name<br>
+                City, State, 12345
+            </address>
+        </div>
+        <div class="col-md-6">
+            <h5>Entre em Contato</h5>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Telefone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+    </div>
+
+    <h5 class="mt-4">Envie-nos uma Mensagem</h5>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="name" placeholder="Seu Nome">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="seuemail@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+{% endblock %}
